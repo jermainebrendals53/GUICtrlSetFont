@@ -1,0 +1,2 @@
+# GUICtrlSetFont
+ Local $IP_range = "" ; range to be pinged (leave it empty to ping all local lan) ; Local $IP_mask = ""   Opt("GUIOnEventMode", 1) HotKeySet("{esc}", "_button1")  Local $Win_X = 600, $Win_Y = 600 ; dimension of window $PingGui = GUICreate("IP addresses monitor", $Win_X, $Win_Y, -1, -1) GUISetOnEvent($GUI_EVENT_CLOSE, "_button1", $PingGui) $listview = GUICtrlCreateListView("", 10, 10, $Win_X - 20, $Win_Y - 40) GUICtrlSetFont(-1, 6) GUICtrlSetStyle($listview, $LVS_ICON + $LVS_NOLABELWRAP)
